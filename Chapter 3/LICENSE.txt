@@ -1,0 +1,4 @@
+* traffic_data.txt
+    https://archive.ics.uci.edu/ml/datasets/Dodgers+Loop+Sensor
+
+These loop sensor measurements were obtained from the Freeway Performance Measurement System (PeMS), http://pems.dot.ca.gov/

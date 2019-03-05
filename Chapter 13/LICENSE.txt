@@ -1,0 +1,11 @@
+* `haar_cascade_files/*.xml`
+   Copyright (C) 2000, Intel Corporation, all rights reserved.
+   See each xml file
+
+* `bbb.mp4` 
+  "Big Buck Bunny" 1:25--1:29  CC by 3.0 
+  https://peach.blender.org/
+
+* `ed.mp4` 
+  "Elephants Dream" 3:10--3:14  CC by 2.5 
+  https://orange.blender.org/
