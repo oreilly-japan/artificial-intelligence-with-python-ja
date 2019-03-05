@@ -1,0 +1,10 @@
+* spoken_word.wav and data/
+https://code.google.com/archive/p/hmm-speech-recognition/
+Apache License 2.0
+Created by Hakon Sandsmark.
+
+* python_speech_features/
+http://python-speech-features.readthedocs.org/
+The MIT License (MIT)
+Copyright (c) 2013 James Lyons
+  See python_speech_features/LICENSE
