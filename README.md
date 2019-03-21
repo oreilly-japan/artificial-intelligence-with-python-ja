@@ -124,4 +124,18 @@ jupyterを起動したフォルダのファイル一覧が表示されます。
 
 ## 正誤表
 
-まだありません。誤植など間違いを見つけた方は、japan@oreilly.co.jpまでお知らせください。
+下記の誤りがありました。お詫びして訂正いたします。
+
+本ページに掲載されていない誤植など間違いを見つけた方は、japan@oreilly.co.jpまでお知らせください。
+
+### 第1刷
+
+#### ■14章 P.342 訳注
+**誤**
+```
+C:\Users\aizo\Anaconda3\lib\site-packages\nurolab\__init__.py
+```
+**正**
+```
+C:\Users\aizo\Anaconda3\lib\site-packages\neurolab\__init__.py
+```
