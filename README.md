@@ -35,7 +35,7 @@
 本書では、以下の環境で動作確認しました。
 
 * Windows 10
-* Anaconda3（Python 3.6.7）
+* Anaconda3（Python 3.6, 3.7）
 
 Anacondaでは、次のパッケージはインストール済みです。
 
@@ -60,14 +60,6 @@ opencv
 tensorflow
 ```
 
-なお、現時点ではcvxoptとtensorflowは、Pythonの最新バージョン3.7には対応しておらずインストールできません。
-その場合には、次のように、Python 3.6の環境を作ります。
-
-```
-$ conda create -y -n py36 python=3.6 anaconda cvxopt tensorflow
-$ activate py36
-```
-
 `pip install`でインストールする必要があるパッケージは次のとおりです。
 
 ```
@@ -80,6 +72,22 @@ hmmlearn
 pystruct
 neurolab
 gym
+```
+
+PyPIにあるpystruct 0.3.2はPython 3.7に対応していないため、インストールに失敗します。古いCythonによって生成された`src/utils.c`がPython3.7と互換性がないためです。次のようにソースファイルからインストールしてください。インストールにはCコンパイラが必要です。Windowsの場合は、Visual Studio 2017コミュニティー版をインストールしておいてください。
+
+1. https://github.com/pystruct/pystruct を開き、[Clone or Download]をクリックしてソースファイルを取得します。
+
+2. ソースファイルのあるディレクトリに移動してから、次のようにCythonを実行して、`src/utils.c`を生成します。
+```
+cd src
+cython utils.pyx 
+```
+
+3. 元のディレクトリに戻って、パッケージをインストールします。
+```
+cd ..
+python setup.py install
 ```
 
 AIは進歩が激しいため、頻繁にパッケージがバージョンアップされます。
@@ -101,9 +109,6 @@ APIがdeprecated（廃止予定）であるという警告が表示された場�
 
 ## 実行方法
 
-学習モデルを構築するためには、代表的な実データが必要です。
-必要なパッケージがインストール済んでいれば、パッケージを通じてデータを扱うことができます。
-
 端末に次のように入力して、`jupyter notebook`を起動してください。
 
 ```bash
@@ -120,7 +125,6 @@ jupyterを起動したフォルダのファイル一覧が表示されます。
 「Untitled」タブが新たに開きます。
 `In [ ]:`の右側にPythonのコードを記述し、
 画面上部の［Cell］メニューから選択するか画面上部のボタンを押して実行することもできます。
-
 
 ## 正誤表
 
