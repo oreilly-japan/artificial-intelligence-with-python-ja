@@ -143,3 +143,15 @@ C:\Users\aizo\Anaconda3\lib\site-packages\nurolab\__init__.py
 ```
 C:\Users\aizo\Anaconda3\lib\site-packages\neurolab\__init__.py
 ```
+
+#### ■A.1 P.391 コード
+**誤**
+```
+_, contours, _ = cv2.findContours(gray_image, cv2.RETR_TREE,
+                               cv2.CHAIN_APPROX_SIMPLE)
+```
+**正**
+```                               
+contours, _ = cv2.findContours(gray_image, cv2.RETR_TREE,
+                               cv2.CHAIN_APPROX_SIMPLE)[-2:]
+```
