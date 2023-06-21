@@ -134,6 +134,46 @@ jupyterを起動したフォルダのファイル一覧が表示されます。
 
 ### 第2刷まで
 
+#### ■2章 P.31 13行目
+**誤**
+```
+ラベルと数字のタプルが格納
+```
+**正**
+```
+単語ラベルが配列形式で格納
+```
+
+#### ■2章 P.38 6行目
+**誤**
+```
+model_selection()という関数
+```
+**正**
+```
+model_selection.train_test_split()という関数
+```
+
+#### ■2章 P.46 19行目
+**誤**
+```
+classifier = LinearSVC(random_state=0)
+```
+**正**
+```
+classifier = LinearSVC(dual=False, random_state=0)
+```
+
+#### ■2章 P.50 25行目
+**誤**
+```
+ regressor_singlevar.py
+```
+**正**
+```
+regressor_singlevar.ipynb
+```
+
 #### ■15章 P.367 18行目
 **誤**
 ```
